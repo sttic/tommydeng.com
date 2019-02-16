@@ -1,12 +1,15 @@
 <template>
-  <header id="header" :class="nav">
+  <header id="header" :class="isRoute('home') ? css : ''">
     <h1>
-      <router-link to="/">Tommy Deng</router-link>&nbsp;| Seeking Internship
+      <a v-if="isRoute('home')" href="#">Tommy Deng</a>
+      <router-link v-else to="/">Tommy Deng</router-link>
+      <span>&nbsp;| Seeking Internship</span>
     </h1>
     <nav id="nav">
       <ul>
         <li>
-          <router-link to="/">Home</router-link>
+          <a v-if="isRoute('home')" href="#">Home</a>
+          <router-link v-else to="/">Home</router-link>
         </li>
         <li>
           <a href="https://resume.tommydeng.com/">Resume</a>
@@ -24,7 +27,7 @@ export default {
   name: "header",
   data() {
     return {
-      nav: "reveal"
+      css: "reveal"
     };
   },
   created() {
@@ -36,7 +39,10 @@ export default {
   methods: {
     handleScroll() {
       var y = window.scrollY;
-      this.nav = y < 260 ? "reveal alt" : "reveal";
+      this.css = y < 260 ? "reveal alt" : "reveal";
+    },
+    isRoute(name) {
+      return this.$route.name == name;
     }
   }
 };
