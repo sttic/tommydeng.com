@@ -68,3 +68,11 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+#main {
+  /* margin-top: none; */
+  padding: 4em 0;
+}
+</style>
+

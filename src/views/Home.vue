@@ -1,13 +1,17 @@
 <template>
   <div id="home">
     <Banner/>
-    <Projects/>
+    <section id="main" class="container landing">
+      <Welcome/>
+      <Projects/>
+    </section>
     <CTA/>
   </div>
 </template>
 
 <script>
 import Banner from "@/components/Banner.vue";
+import Welcome from "@/components/Welcome.vue";
 import Projects from "@/components/Projects.vue";
 import CTA from "@/components/CTA.vue";
 
@@ -15,6 +19,7 @@ export default {
   name: "home",
   components: {
     Banner,
+    Welcome,
     Projects,
     CTA
   }

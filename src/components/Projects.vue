@@ -1,16 +1,5 @@
 <template>
-  <section id="main" class="container">
-    <section class="box special">
-      <header class="major">
-        <h2>Welcome!</h2>
-        <p>Why hello there, it's nice to see you.
-          <br>I hope you are well.
-          <br>
-          <br>Consider taking a look below at some of my projects!
-        </p>
-      </header>
-    </section>
-
+  <div id="projects">
     <div class="row">
       <!-- Left -->
       <div class="6u 12u(narrower)">
@@ -313,5 +302,5 @@
         </section>
       </div>
     </div>
-  </section>
+  </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="contact">
     <ContactInfo/>
   </div>
 </template>
@@ -15,3 +15,10 @@ export default {
 };
 </script>
 
+<style scoped>
+@media only screen and (min-width: 840px) {
+  #contact {
+    margin-top: 3.25em;
+  }
+}
+</style>
