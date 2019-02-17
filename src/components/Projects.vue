@@ -304,3 +304,11 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+@media only screen and (max-width: 736px) {
+  .row div {
+    width: 100%;
+  }
+}
+</style>

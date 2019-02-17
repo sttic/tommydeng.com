@@ -27,44 +27,10 @@ export default {
 </script>
 
 <style scoped>
-@-moz-keyframes reveal-header {
-  0% {
-    top: -5em;
-  }
-
-  100% {
-    top: 0;
-  }
-}
-
-@-webkit-keyframes reveal-header {
-  0% {
-    top: -5em;
-  }
-
-  100% {
-    top: 0;
-  }
-}
-
-@-ms-keyframes reveal-header {
-  0% {
-    top: -5em;
-  }
-
-  100% {
-    top: 0;
-  }
-}
-
-@keyframes reveal-header {
-  0% {
-    top: -5em;
-  }
-
-  100% {
-    top: 0;
+@media only screen and (max-width: 736px) {
+  #main {
+    padding: 0;
+    margin-top: 0;
   }
 }
 </style>
-
