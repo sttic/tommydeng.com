@@ -2,7 +2,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 
-require("./assets/css/main.css");
+require("./assets/css/style.css");
 
 Vue.config.productionTip = false;
 
