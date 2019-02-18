@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="page-wrapper">
-      <Header/>
+      <NavBar/>
       <router-view/>
       <Footer/>
     </div>
@@ -9,14 +9,20 @@
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
+import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   name: "app",
   components: {
-    Header,
+    NavBar,
     Footer
   }
 };
 </script>
+
+<style>
+a {
+  cursor: pointer;
+}
+</style>

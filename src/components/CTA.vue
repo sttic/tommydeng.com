@@ -5,7 +5,7 @@
 
     <ul class="actions">
       <li>
-        <a href="#" class="button">Back to top</a>
+        <a @click="this.smoothScrollTop" class="button">Back to top</a>
       </li>
     </ul>
   </section>
