@@ -164,8 +164,20 @@ export default {
 
 <style scoped>
 @media only screen and (max-width: 736px) {
+  .row {
+    padding: 0 1em;
+  }
+
   .row div {
     width: 100%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .row {
+    padding: 0;
   }
 }
 </style>
