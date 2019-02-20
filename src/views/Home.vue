@@ -3,7 +3,7 @@
     <Banner/>
     <section id="main" class="container landing">
       <Welcome/>
-      <Projects/>
+      <ProjectList/>
     </section>
     <CTA/>
   </div>
@@ -12,7 +12,7 @@
 <script>
 import Banner from "@/components/Banner.vue";
 import Welcome from "@/components/Welcome.vue";
-import Projects from "@/components/Projects.vue";
+import ProjectList from "@/components/ProjectList.vue";
 import CTA from "@/components/CTA.vue";
 
 export default {
@@ -20,7 +20,7 @@ export default {
   components: {
     Banner,
     Welcome,
-    Projects,
+    ProjectList,
     CTA
   }
 };

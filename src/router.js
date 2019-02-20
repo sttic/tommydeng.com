@@ -18,6 +18,12 @@ export default new Router({
       component: loadView("Home")
     },
     {
+      path: "/project/:id",
+      name: "project",
+      component: loadView("Project"),
+      props: true
+    },
+    {
       path: "/contact",
       name: "contact",
       component: loadView("Contact")

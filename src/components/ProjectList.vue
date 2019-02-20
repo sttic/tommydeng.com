@@ -1,5 +1,5 @@
 <template>
-  <div id="projects">
+  <div id="projectList">
     <div class="row">
       <div id="left" class="6u 12u(narrower)">
         <div
@@ -9,15 +9,15 @@
           class="box special"
         >
           <span class="image featured showcase">
-            <a :href="`/projects/${item.id}`">
+            <router-link :to="`/project/${item.id}`">
               <img :src="item.img" alt>
-            </a>
+            </router-link>
           </span>
           <h3>{{ item.title }}</h3>
           <p>{{ item.description }}</p>
           <ul class="actions">
             <li>
-              <a :href="`/projects/${item.id}`" class="button alt">Read More</a>
+              <router-link :to="`/project/${item.id}`" class="button alt">Read More</router-link>
             </li>
           </ul>
         </div>
@@ -31,15 +31,15 @@
           class="box special"
         >
           <span class="image featured showcase">
-            <a :href="`/projects/${item.id}`">
+            <router-link :to="`/project/${item.id}`">
               <img :src="item.img" alt>
-            </a>
+            </router-link>
           </span>
           <h3>{{ item.title }}</h3>
           <p>{{ item.description }}</p>
           <ul class="actions">
             <li>
-              <a :href="`/projects/${item.id}`" class="button alt">Read More</a>
+              <router-link :to="`/project/${item.id}`" class="button alt">Read More</router-link>
             </li>
           </ul>
         </div>
@@ -50,7 +50,7 @@
 
 <script>
 export default {
-  name: "projects",
+  name: "projectList",
   data() {
     return {
       projects: [
@@ -178,6 +178,10 @@ export default {
 @media only screen and (max-width: 480px) {
   .row {
     padding: 0;
+  }
+
+  .row div {
+    margin-top: 1em;
   }
 }
 </style>

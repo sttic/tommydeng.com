@@ -16,7 +16,7 @@
         </li>
         <li>
           <a v-if="isRoute('contact')" @click="this.smoothScrollTop">Contact</a>
-          <router-link v-else to="contact">Contact</router-link>
+          <router-link v-else to="/contact">Contact</router-link>
         </li>
       </ul>
     </nav>
@@ -43,7 +43,10 @@ export default {
       this.css = y < 260 ? "reveal alt" : "reveal";
     },
     isRoute(name) {
-      return this.$route.name == name;
+      return this.$route.name === name;
+    },
+    isNotRoute(name) {
+      return this.$route.name !== name;
     }
   }
 };

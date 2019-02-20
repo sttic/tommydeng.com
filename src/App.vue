@@ -25,4 +25,11 @@ export default {
 a {
   cursor: pointer;
 }
+
+@media only screen and (min-width: 840px) {
+  #project,
+  #contact {
+    margin-top: 3.25em;
+  }
+}
 </style>
