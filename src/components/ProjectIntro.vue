@@ -3,7 +3,7 @@
     <span :class="imageStyle ? imageStyle : `image featured`">
       <img :src="image">
     </span>
-    <h3>General</h3>
+    <h3>{{ title || `General` }}</h3>
     <p v-html="general"></p>
 
     <div class="row">
@@ -29,6 +29,7 @@
 <script>
 export default {
   props: {
+    title: String,
     image: String,
     imageStyle: String,
     general: String,
