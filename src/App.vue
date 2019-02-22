@@ -26,10 +26,24 @@ a {
   cursor: pointer;
 }
 
+#project {
+  padding: 4em 0;
+}
+
+.actions.fit {
+  padding-top: 1em;
+}
+
 @media only screen and (min-width: 840px) {
   #project,
   #contact {
     margin-top: 3.25em;
+  }
+}
+
+@media screen and (min-width: 480.5px) and (max-width: 736px) {
+  .actions.fit {
+    margin: 1em;
   }
 }
 </style>

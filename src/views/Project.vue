@@ -1,8 +1,8 @@
 <template>
   <div id="project">
     <div class="container" v-if="component">
+      <component :is="component"/>
       <div class="actions fit">
-        <component :is="component"></component>
         <router-link :to="`/#${id}`" class="button fit">Back to projects</router-link>
       </div>
     </div>
