@@ -1,7 +1,11 @@
 <template>
   <div class="box">
     <h3>{{ title || `Links` }}</h3>
-    <a v-for="(item, index) in links" :key="index" :href="item.ref" target="_blank">{{ item.name }}</a>
+    <ul>
+      <li v-for="(item, index) in links" :key="index">
+        <a :href="item.ref" target="_blank">{{ item.name }}</a>
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -11,5 +15,5 @@ export default {
     title: String,
     links: Array
   }
-}
+};
 </script>
