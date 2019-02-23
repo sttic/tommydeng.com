@@ -2,8 +2,7 @@
   <div id="main">
     <header class="project-title">
       <h2>{{ title }}</h2>
-      <p>{{ caption }}
-      </p>
+      <p v-html="caption"></p>
     </header>
   </div>
 </template>
