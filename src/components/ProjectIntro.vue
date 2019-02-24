@@ -3,7 +3,7 @@
     <span :class="imageStyle ? imageStyle : `image featured`">
       <img :src="image">
     </span>
-    <h3>{{ title || `General` }}</h3>
+    <h3 v-if="general">{{ title || `General` }}</h3>
     <p v-html="general"></p>
 
     <div class="row">
