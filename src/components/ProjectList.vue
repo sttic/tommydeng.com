@@ -9,7 +9,7 @@
           class="box special"
         >
           <span class="image featured showcase">
-            <router-link :to="`/project/${item.id}`">
+            <router-link :to="`/projects/${item.id}`">
               <img :src="item.img" alt>
             </router-link>
           </span>
@@ -17,7 +17,7 @@
           <p>{{ item.description }}</p>
           <ul class="actions">
             <li>
-              <router-link :to="`/project/${item.id}`" class="button alt">Read More</router-link>
+              <router-link :to="`/projects/${item.id}`" class="button alt">Read More</router-link>
             </li>
           </ul>
         </div>
@@ -31,7 +31,7 @@
           class="box special"
         >
           <span class="image featured showcase">
-            <router-link :to="`/project/${item.id}`">
+            <router-link :to="`/projects/${item.id}`">
               <img :src="item.img" alt>
             </router-link>
           </span>
@@ -39,7 +39,7 @@
           <p>{{ item.description }}</p>
           <ul class="actions">
             <li>
-              <router-link :to="`/project/${item.id}`" class="button alt">Read More</router-link>
+              <router-link :to="`/projects/${item.id}`" class="button alt">Read More</router-link>
             </li>
           </ul>
         </div>

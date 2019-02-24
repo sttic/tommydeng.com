@@ -18,7 +18,7 @@ export default new Router({
       component: loadView("Home")
     },
     {
-      path: "/project/:id",
+      path: "/projects/:id",
       name: "project",
       component: loadView("Project"),
       props: true
