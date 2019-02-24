@@ -53,11 +53,7 @@ export default {
       },
       projectText: {
         title: `Method`,
-        text: `I had the game open on my phone and interfaced with it using ApowerMirror. ApowerMirror is a screen
-      mirroring application that also has the functionality to control the phone on a computer.
-      The program plays the game by scanning the image and reacting to black pixels in each of the piano
-      tiles lanes. It then sorts it by distance/priority and performs rapid mouse movements and clicks.
-      The mouse control was done with the PyAutoGUI python library.`
+        text: `I had the game open on my phone and interfaced with it using ApowerMirror. ApowerMirror is a screen mirroring application that also has the functionality to control the phone on a computer. The program plays the game by scanning the image and reacting to black pixels in each of the piano tiles lanes. It then sorts it by distance/priority and performs rapid mouse movements and clicks. The mouse control was done with the PyAutoGUI python library.`
       },
       projectLinks: {
         links: [
