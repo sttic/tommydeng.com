@@ -28,30 +28,26 @@ export default {
     NavBar,
     Footer
   },
-  data() {
-    return {
-      showNavPanel: false
-    };
-  },
   created() {
     window.addEventListener("resize", this.handleResize);
   },
   mounted() {
     this.handleResize();
+    this.$store.dispatch("showNavPanelFalse");
   },
   methods: {
     handleResize() {
-      if (window.innerWidth > 840) {
-        this.showNavPanel = false;
+      if (window.innerWidth > 840 && this.$store.getters.getShowNavPanel) {
+        this.$store.dispatch("showNavPanelFalse");
       }
     },
     toggleNavPanel() {
-      this.showNavPanel = !this.showNavPanel;
+      this.$store.dispatch("toggleShowNavPanel");
     }
   },
   computed: {
     showNavPanelClass() {
-      return this.showNavPanel ? "navPanel-visible" : "";
+      return this.$store.getters.getShowNavPanel ? "navPanel-visible" : "";
     }
   }
 };
