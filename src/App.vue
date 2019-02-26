@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <div class="page-wrapper">
-      <NavBar/>
+      <div :class="showNavPanelClass">
+        <div @click="toggleNavPanel">
+          <NavButton/>
+        </div>
+        <NavPanel/>
+        <NavBar/>
+      </div>
       <router-view/>
       <Footer/>
     </div>
@@ -9,14 +15,44 @@
 </template>
 
 <script>
+import NavButton from "@/components/NavButton.vue";
+import NavPanel from "@/components/NavPanel.vue";
 import NavBar from "@/components/NavBar.vue";
 import Footer from "@/components/Footer.vue";
 
 export default {
   name: "app",
   components: {
+    NavButton,
+    NavPanel,
     NavBar,
     Footer
+  },
+  data() {
+    return {
+      showNavPanel: false
+    };
+  },
+  created() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  mounted() {
+    this.handleResize();
+  },
+  methods: {
+    handleResize() {
+      if (window.innerWidth > 840) {
+        this.showNavPanel = false;
+      }
+    },
+    toggleNavPanel() {
+      this.showNavPanel = !this.showNavPanel;
+    }
+  },
+  computed: {
+    showNavPanelClass() {
+      return this.showNavPanel ? "navPanel-visible" : "";
+    }
   }
 };
 </script>
@@ -45,5 +81,26 @@ a {
   .actions.fit {
     margin: 1em;
   }
+}
+
+.navPanel-visible #page-wrapper {
+  -moz-transform: translateX(275px);
+  -webkit-transform: translateX(275px);
+  -ms-transform: translateX(275px);
+  transform: translateX(275px);
+}
+
+.navPanel-visible #navButton {
+  -moz-transform: translateX(275px);
+  -webkit-transform: translateX(275px);
+  -ms-transform: translateX(275px);
+  transform: translateX(275px);
+}
+
+.navPanel-visible #navPanel {
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
 }
 </style>
