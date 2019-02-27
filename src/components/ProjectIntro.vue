@@ -1,6 +1,6 @@
 <template>
   <div class="box">
-    <span :class="imageStyle ? imageStyle : `image featured`">
+    <span v-if="image" :class="imageStyle ? imageStyle : `image featured`">
       <img :src="image">
     </span>
     <h3 v-if="general">{{ title || `General` }}</h3>
