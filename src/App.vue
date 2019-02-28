@@ -2,9 +2,7 @@
   <div id="app">
     <div class="page-wrapper">
       <div :class="showNavPanelClass">
-        <div @click="toggleNavPanel">
-          <NavButton/>
-        </div>
+        <NavButton @click.native="toggleNavPanel"/>
         <NavPanel/>
         <NavBar/>
       </div>
