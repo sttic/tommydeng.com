@@ -36,8 +36,12 @@ export default {
     ProjectIntro,
     ProjectText
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Moon Photos`,
       projectTitle: {
         title: `Moon Photos`,
         caption: `To the moon!`

@@ -52,8 +52,12 @@ export default {
     ProjectIntro,
     ProjectLinks
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Photoshop Battles`,
       projectTitle: {
         title: `Photoshop Battles`,
         caption: `Friendly Photoshop competitions at <a href="https://www.reddit.com/r/photoshopbattles/">/r/photoshopbattles</a> on Reddit.`

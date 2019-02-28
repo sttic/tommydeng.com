@@ -39,8 +39,12 @@ export default {
     ProjectIntro,
     ProjectImageArray
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Minecraft Art`,
       projectTitle: {
         title: `Minecraft Art`,
         caption: `Digital art that I made for others.`

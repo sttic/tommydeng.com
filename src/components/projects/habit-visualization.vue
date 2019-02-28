@@ -157,8 +157,12 @@ export default {
     ProjectImageArray,
     ProjectLinks
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Habit Visualization`,
       projectTitle: {
         title: `Habit Visualization`,
         caption: `A python rework of "My terrible sleep habits visualized".`

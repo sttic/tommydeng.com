@@ -68,8 +68,12 @@ export default {
     ProjectIntro,
     ProjectLinks
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Sleep Visualization`,
       projectTitle: {
         title: `Sleep visualization`,
         caption: `My terrible sleep habits visualized.`

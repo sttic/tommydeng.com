@@ -19,8 +19,12 @@ export default {
     ProjectTitle,
     ProjectIntro
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Ottabotics Learning Project`,
       projectTitle: {
         title: `Ottabotics Learning Project`,
         caption: `An introductory team project for uOttawa's robotics club.`

@@ -22,8 +22,12 @@ export default {
     ProjectIntro,
     ProjectShowcase
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Photography`,
       projectTitle: {
         title: `Photography`,
         caption: `Pretty pixels?`

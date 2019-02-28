@@ -45,8 +45,12 @@ export default {
     ProjectIntro,
     ProjectLinks
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Traffic Light Detector`,
       projectTitle: {
         title: `Traffic Light Detector`,
         caption: `A computer vision system to detect traffic light states.`

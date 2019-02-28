@@ -11,6 +11,9 @@ Vue.mixin({
   methods: {
     smoothScrollTop() {
       window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+    setDocumentTitle(title) {
+      document.title = title ? title + " - Tommy Deng" : "Tommy Deng";
     }
   }
 });

@@ -28,8 +28,12 @@ export default {
     ProjectText,
     ProjectLinks
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Piano Tiles Bot`,
       projectTitle: {
         title: `Piano Tiles Bot`,
         caption: `Automated gameplay of "Piano Tiles" mobile game with PyAutoGUI.`

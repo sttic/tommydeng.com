@@ -28,8 +28,12 @@ export default {
     ProjectShowcase,
     ProjectLinks
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Gotta Go`,
       projectTitle: {
         title: `Gotta Go`,
         caption: `A mock startup project for SEG2900 where my group<br>was tasked with creating a website and pitch for a fictional company.<br><br>We settled on the idea of Gotta Go.`

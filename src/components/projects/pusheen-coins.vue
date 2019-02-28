@@ -25,8 +25,12 @@ export default {
     ProjectText,
     ProjectShowcase
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Pusheen Coins`,
       projectTitle: {
         title: `Pusheen Coins`,
         caption: `Coins based on a cute Internet cat named Pusheen.`

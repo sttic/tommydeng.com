@@ -22,8 +22,12 @@ export default {
     ProjectIntro,
     ProjectShowcase
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `MTC Training`,
       projectTitle: {
         title: `MTC Training`,
         caption: `Training done at the uOttawa's Brunsfield Centre.`

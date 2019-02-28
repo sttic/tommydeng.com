@@ -35,8 +35,12 @@ export default {
     ProjectText,
     ProjectLinks
   },
+  created() {
+    this.setDocumentTitle(this.documentTitle);
+  },
   data() {
     return {
+      documentTitle: `Interframe Compression`,
       projectTitle: {
         title: `Interframe Compression`,
         caption: `A system to send only the difference between the current and previous image in a video feed to reduce bandwidth usage in video streaming.`

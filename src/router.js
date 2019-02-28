@@ -8,14 +8,17 @@ function loadView(view) {
     import(/* webpackChunkName: "view-[request]" */ `@/views/${view}.vue`);
 }
 
-export default new Router({
+const router = new Router({
   mode: "history",
   base: process.env.BASE_URL,
   routes: [
     {
       path: "/",
       name: "home",
-      component: loadView("Home")
+      component: loadView("Home"),
+      meta: {
+        title: "Home - Tommy Deng"
+      }
     },
     {
       path: "/projects/:id",
@@ -26,7 +29,10 @@ export default new Router({
     {
       path: "/contact",
       name: "contact",
-      component: loadView("Contact")
+      component: loadView("Contact"),
+      meta: {
+        title: "Contact - Tommy Deng"
+      }
     },
     {
       path: "*",
@@ -43,3 +49,12 @@ export default new Router({
     }
   }
 });
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.title) {
+    document.title = to.meta.title;
+  }
+  next();
+});
+
+export default router;
