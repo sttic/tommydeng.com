@@ -33,6 +33,9 @@ export default {
     this.handleResize();
     this.$store.dispatch("showNavPanelFalse");
   },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
   methods: {
     handleResize() {
       if (window.innerWidth > 840 && this.$store.getters.getShowNavPanel) {

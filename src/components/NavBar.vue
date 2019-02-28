@@ -37,6 +37,9 @@ export default {
   mounted() {
     this.handleScroll();
   },
+  destroyed() {
+    window.removeEventListener("scroll", this.handleResize);
+  },
   methods: {
     handleScroll() {
       var y = window.scrollY;
