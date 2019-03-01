@@ -6,11 +6,7 @@
         <span>&#8203;</span>
       </li>
       <li>
-        <a
-          href="ö.html"
-          onmouseover="this.style.color='#e89980'"
-          onmouseout="this.style.color='#999'"
-        >ö</a>
+        <router-link to="happy"><span class="orange-ify">ö</span></router-link>
       </li>
       <li>
         <span>&#8203;</span>

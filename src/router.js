@@ -35,6 +35,22 @@ const router = new Router({
       }
     },
     {
+      path: "/happy",
+      name: "happy",
+      component: loadView("AreYouHappy"),
+      meta: {
+        title: "Are you happy?"
+      }
+    },
+    {
+      path: "/cat",
+      name: "cat",
+      component: loadView("Cat"),
+      meta: {
+        title: "have cat meöw"
+      }
+    },
+    {
       path: "*",
       redirect: "/"
     }

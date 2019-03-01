@@ -11,8 +11,19 @@ export default {
 </script>
 
 <style>
+@import "./assets/css/style.css";
+
 a {
   cursor: pointer;
+}
+
+.orange-ify {
+  transition: 0.5s;
+}
+
+.orange-ify:hover {
+  color: #e89980;
+  transition: 0.5s;
 }
 
 #project {
