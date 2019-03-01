@@ -1,22 +1,6 @@
 <template>
   <footer id="footer">
-    <ul class="icons">
-      <li>
-        <a href="https://www.linkedin.com/in/tommydeng" target="_blank" class="icon fa-linkedin">
-          <span class="label">LinkedIn</span>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:contact@tommydeng.com" target="_blank" class="icon fa-envelope">
-          <span class="label">Email</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/sttic" target="_blank" class="icon fa-github">
-          <span class="label">Github</span>
-        </a>
-      </li>
-    </ul>
+    <ContactIcons/>
     <ul class="copyright">
       <li>
         <span>&#8203;</span>
@@ -34,3 +18,13 @@
     </ul>
   </footer>
 </template>
+
+<script>
+import ContactIcons from "@/components/ContactIcons.vue";
+
+export default {
+  components: {
+    ContactIcons
+  }
+};
+</script>

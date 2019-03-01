@@ -1,28 +1,16 @@
 <template>
-  <section id="main" class="container 75%">
-    <header>
-      <h2>Contact Information</h2>
-      <p>Feel free to share your thoughts and connect with me.</p>
-      <ul class="icons">
-        <li v-for="(item, index, id) in contactIcons" :key="id">
-          <a :href="item.link" :class="item.icon"></a>
+  <div class="box">
+    <div v-for="(item, index, id) in contactInfo" :key="id">
+      <h3>{{ item.title }}</h3>
+      <ul class="contact alt">
+        <li v-for="(item, index, id) in item.infoList" :key="id">
+          {{ item.type }}
+          <a v-if="item.link" :href="item.link">{{ item.data }}</a>
+          <span v-else>{{ item.data }}</span>
         </li>
       </ul>
-    </header>
-
-    <div class="box">
-      <div v-for="(item, index, id) in contactInfo" :key="id">
-        <h3>{{ item.title }}</h3>
-        <ul class="contact alt">
-          <li v-for="(item, index, id) in item.infoList" :key="id">
-            {{ item.type }}
-            <a v-if="item.link" :href="item.link">{{ item.data }}</a>
-            <span v-else>{{ item.data }}</span>
-          </li>
-        </ul>
-      </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -30,14 +18,6 @@ export default {
   name: "ContactInfo",
   data() {
     return {
-      contactIcons: [
-        {
-          icon: "icon fa-linkedin",
-          link: "https://www.linkedin.com/in/tommydeng"
-        },
-        { icon: "icon fa-envelope", link: "mailto:contact@tommydeng.com" },
-        { icon: "icon fa-github", link: "https://github.com/sttic" }
-      ],
       contactInfo: [
         {
           title: "General",
