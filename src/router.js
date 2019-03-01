@@ -17,7 +17,7 @@ const router = new Router({
       name: "home",
       component: loadView("Home"),
       meta: {
-        title: "Home - Tommy Deng"
+        title: "Tommy Deng - Home"
       }
     },
     {
@@ -31,7 +31,7 @@ const router = new Router({
       name: "contact",
       component: loadView("Contact"),
       meta: {
-        title: "Contact - Tommy Deng"
+        title: "Tommy Deng - Contact"
       }
     },
     {

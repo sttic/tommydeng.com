@@ -13,7 +13,7 @@ Vue.mixin({
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
     setDocumentTitle(title) {
-      document.title = title ? title + " - Tommy Deng" : "Tommy Deng";
+      document.title = title ? "Tommy Deng - " + title : "Tommy Deng";
     }
   }
 });
