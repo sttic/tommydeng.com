@@ -1,12 +1,29 @@
 <template>
   <div id="app">
-    <router-view/>
+    <div v-if="onMainRoute" class="page-wrapper">
+      <NavComponents/>
+      <router-view/>
+      <Footer/>
+    </div>
+    <router-view v-else/>
   </div>
 </template>
 
 <script>
+import NavComponents from "@/components/NavComponents.vue";
+import Footer from "@/components/Footer.vue";
+
 export default {
-  name: "app"
+  name: "app",
+  components: {
+    NavComponents,
+    Footer
+  },
+  computed: {
+    onMainRoute() {
+      return "home;projects;contact".split(";").includes(this.$route.name);
+    }
+  }
 };
 </script>
 
