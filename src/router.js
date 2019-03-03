@@ -22,7 +22,7 @@ const router = new Router({
     },
     {
       path: "/projects/:id",
-      name: "project",
+      name: "projects",
       component: loadView("Project"),
       props: true
     },

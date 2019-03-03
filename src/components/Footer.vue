@@ -6,7 +6,7 @@
         <span>&#8203;</span>
       </li>
       <li>
-        <router-link to="happy"><span class="orange-ify">ö</span></router-link>
+        <router-link to="/happy"><span class="orange-ify">ö</span></router-link>
       </li>
       <li>
         <span>&#8203;</span>
