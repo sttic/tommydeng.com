@@ -25,7 +25,7 @@ export default {
       return () => import(`@/components/projects/${this.id}.vue`);
     }
   },
-  mounted() {
+  created() {
     this.loader()
       .then(() => {
         this.component = () => this.loader();

@@ -1,7 +1,9 @@
 import Vue from "vue";
 import Router from "vue-router";
+import Meta from "vue-meta";
 
 Vue.use(Router);
+Vue.use(Meta);
 
 function loadView(view) {
   return () =>
@@ -15,10 +17,7 @@ const router = new Router({
     {
       path: "/",
       name: "home",
-      component: loadView("Home"),
-      meta: {
-        title: "Tommy Deng - Home"
-      }
+      component: loadView("Home")
     },
     {
       path: "/projects/:id",
@@ -29,42 +28,27 @@ const router = new Router({
     {
       path: "/contact",
       name: "contact",
-      component: loadView("Contact"),
-      meta: {
-        title: "Tommy Deng - Contact"
-      }
+      component: loadView("Contact")
     },
     {
       path: "/happy",
       name: "happy",
-      component: loadView("AreYouHappy"),
-      meta: {
-        title: "Are you happy?"
-      }
+      component: loadView("AreYouHappy")
     },
     {
       path: "/cat",
       name: "cat",
-      component: loadView("Cat"),
-      meta: {
-        title: "have cat meöw"
-      }
+      component: loadView("Cat")
     },
     {
       path: "/im-fine",
       name: "im-fine",
-      component: loadView("ImFine"),
-      meta: {
-        title: "I'm fine."
-      }
+      component: loadView("ImFine")
     },
     {
       path: "/imfine",
       name: "imfine",
-      component: loadView("ImFine"),
-      meta: {
-        title: "I'm fine."
-      }
+      component: loadView("ImFine")
     },
     {
       path: "*",

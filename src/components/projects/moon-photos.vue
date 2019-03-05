@@ -30,18 +30,18 @@ import ProjectIntro from "@/components/ProjectIntro.vue";
 import ProjectText from "@/components/ProjectText.vue";
 
 export default {
+  metaInfo: {
+    title: "Moon Photos",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectImageArray,
     ProjectIntro,
     ProjectText
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Moon Photos`,
       projectTitle: {
         title: `Moon Photos`,
         caption: `To the moon!`

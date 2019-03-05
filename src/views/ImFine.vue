@@ -9,6 +9,9 @@
 
 <script>
 export default {
+  metaInfo: {
+    title: "I'm fine."
+  },
   created() {
     this.requestId = window.requestAnimationFrame(this.animate);
   },

@@ -4,6 +4,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  metaInfo: {
+    title: "have cat meöw"
+  }
+};
+</script>
+
 <style scoped>
 #cat {
   height: 100vh;

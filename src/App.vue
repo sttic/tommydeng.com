@@ -15,6 +15,9 @@ import Footer from "@/components/Footer.vue";
 
 export default {
   name: "app",
+  metaInfo: {
+    title: "Tommy Deng"
+  },
   components: {
     NavComponents,
     Footer

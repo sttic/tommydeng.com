@@ -151,18 +151,18 @@ import ProjectImageArray from "@/components/ProjectImageArray.vue";
 import ProjectLinks from "@/components/ProjectLinks.vue";
 
 export default {
+  metaInfo: {
+    title: "Habit Visualization",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectIntro,
     ProjectImageArray,
     ProjectLinks
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Habit Visualization`,
       projectTitle: {
         title: `Habit Visualization`,
         caption: `A python rework of "My terrible sleep habits visualized".`

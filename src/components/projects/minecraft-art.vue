@@ -34,17 +34,17 @@ import ProjectIntro from "@/components/ProjectIntro.vue";
 import ProjectImageArray from "@/components/ProjectImageArray.vue";
 
 export default {
+  metaInfo: {
+    title: "Minecraft Art",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectIntro,
     ProjectImageArray
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Minecraft Art`,
       projectTitle: {
         title: `Minecraft Art`,
         caption: `Digital art that I made for others.`

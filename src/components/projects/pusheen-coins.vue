@@ -19,18 +19,18 @@ import ProjectText from "@/components/ProjectText.vue";
 import ProjectShowcase from "@/components/ProjectShowcase.vue";
 
 export default {
+  metaInfo: {
+    title: "Pusheen Coins",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectIntro,
     ProjectText,
     ProjectShowcase
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Pusheen Coins`,
       projectTitle: {
         title: `Pusheen Coins`,
         caption: `Coins based on a cute Internet cat named Pusheen.`

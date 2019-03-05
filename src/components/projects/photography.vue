@@ -17,17 +17,17 @@ import ProjectIntro from "@/components/ProjectIntro.vue";
 import ProjectShowcase from "@/components/ProjectShowcase.vue";
 
 export default {
+  metaInfo: {
+    title: "Photography",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectIntro,
     ProjectShowcase
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Photography`,
       projectTitle: {
         title: `Photography`,
         caption: `Pretty pixels?`

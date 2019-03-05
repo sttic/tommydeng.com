@@ -17,6 +17,10 @@ import ContactInfo from "@/components/ContactInfo.vue";
 
 export default {
   name: "contact",
+  metaInfo: {
+    title: "Contact",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ContactIcons,
     ContactInfo

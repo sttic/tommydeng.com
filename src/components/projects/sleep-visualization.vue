@@ -63,17 +63,17 @@ import ProjectIntro from "@/components/ProjectIntro.vue";
 import ProjectLinks from "@/components/ProjectLinks.vue";
 
 export default {
+  metaInfo: {
+    title: "Sleep Visualization",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectIntro,
     ProjectLinks
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Sleep Visualization`,
       projectTitle: {
         title: `Sleep visualization`,
         caption: `My terrible sleep habits visualized.`

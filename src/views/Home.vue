@@ -17,6 +17,10 @@ import CTA from "@/components/CTA.vue";
 
 export default {
   name: "home",
+  metaInfo: {
+    title: "Home",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     Banner,
     Welcome,

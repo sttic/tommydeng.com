@@ -17,17 +17,17 @@ import ProjectIntro from "@/components/ProjectIntro.vue";
 import ProjectShowcase from "@/components/ProjectShowcase.vue";
 
 export default {
+  metaInfo: {
+    title: "MTC Training",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectIntro,
     ProjectShowcase
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `MTC Training`,
       projectTitle: {
         title: `MTC Training`,
         caption: `Training done at the uOttawa's Brunsfield Centre.`

@@ -109,17 +109,17 @@ import ProjectIntro from "@/components/ProjectIntro.vue";
 import ProjectLinks from "@/components/ProjectLinks.vue";
 
 export default {
+  metaInfo: {
+    title: "Potato Simulator",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectIntro,
     ProjectLinks
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Potato Simulator`,
       projectTitle: {
         title: `Potato Simulator`,
         caption: `A silly Unity 3D game that revolves around the player being a high-speed,<br>tumbling potato mindlessly rolling around to explore the world.`

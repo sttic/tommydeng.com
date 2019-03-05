@@ -27,17 +27,17 @@ import ProjectIntro from "@/components/ProjectIntro.vue";
 import ProjectShowcase from "@/components/ProjectShowcase.vue";
 
 export default {
+  metaInfo: {
+    title: "Synthetic Data Generator",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectShowcase,
     ProjectIntro
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Synthetic Data Generator`,
       projectTitle: {
         title: `Synthetic Data Generator`,
         caption: `Automating Blender with Python to render photorealistic images/videos of racing tracks to be used as training data and driving simulation of an autonomous vehicle.`

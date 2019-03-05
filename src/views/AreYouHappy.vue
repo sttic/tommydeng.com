@@ -14,6 +14,14 @@
   </div>
 </template>
 
+<script>
+export default {
+  metaInfo: {
+    title: "Are you happy?",
+  }
+};
+</script>
+
 <style scoped>
 #happy {
   background-color: #101010;

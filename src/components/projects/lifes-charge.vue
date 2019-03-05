@@ -72,18 +72,18 @@ import ProjectText from "@/components/ProjectText.vue";
 import ProjectLinks from "@/components/ProjectLinks.vue";
 
 export default {
+  metaInfo: {
+    title: "Life's Charge",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectIntro,
     ProjectText,
     ProjectLinks
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Life's Charge`,
       projectTitle: {
         title: `Life's Charge – A Countdown to Death`,
         caption: `A finite existence demonstrated through a visual countdown of a typical 4160-week life.<br><br>Each dot represents a week, and each row is a year.`

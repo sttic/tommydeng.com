@@ -40,17 +40,17 @@ import ProjectIntro from "@/components/ProjectIntro.vue";
 import ProjectLinks from "@/components/ProjectLinks.vue";
 
 export default {
+  metaInfo: {
+    title: "Traffic Light Detector",
+    titleTemplate: "Tommy Deng - %s"
+  },
   components: {
     ProjectTitle,
     ProjectIntro,
     ProjectLinks
   },
-  created() {
-    this.setDocumentTitle(this.documentTitle);
-  },
   data() {
     return {
-      documentTitle: `Traffic Light Detector`,
       projectTitle: {
         title: `Traffic Light Detector`,
         caption: `A computer vision system to detect traffic light states.`
