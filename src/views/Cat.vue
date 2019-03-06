@@ -7,7 +7,14 @@
 <script>
 export default {
   metaInfo: {
-    title: "have cat meöw"
+    title: "have cat meöw",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: "Here, have this cat pic :3"
+      }
+    ]
   }
 };
 </script>

@@ -29,7 +29,15 @@ import ProjectShowcase from "@/components/ProjectShowcase.vue";
 export default {
   metaInfo: {
     title: "Synthetic Data Generator",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "Automating Blender with Python to render photorealistic images/videos of racing tracks to be used as training data and driving simulation of an autonomous vehicle. This is an in-progress project to train multiple networks for an autonomous vehicle to compete in the International Autonomous Robot Racing Competition (IARRC)."
+      }
+    ]
   },
   components: {
     ProjectTitle,

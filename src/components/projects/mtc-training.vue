@@ -19,7 +19,14 @@ import ProjectShowcase from "@/components/ProjectShowcase.vue";
 export default {
   metaInfo: {
     title: "MTC Training",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: "Training done at the uOttawa's Brunsfield Centre."
+      }
+    ]
   },
   components: {
     ProjectTitle,

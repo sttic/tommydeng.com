@@ -36,7 +36,14 @@ import ProjectImageArray from "@/components/ProjectImageArray.vue";
 export default {
   metaInfo: {
     title: "Minecraft Art",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: "Digital art that I made for others."
+      }
+    ]
   },
   components: {
     ProjectTitle,

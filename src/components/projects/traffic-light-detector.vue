@@ -42,7 +42,14 @@ import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
   metaInfo: {
     title: "Traffic Light Detector",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: "A computer vision system to detect traffic light states."
+      }
+    ]
   },
   components: {
     ProjectTitle,

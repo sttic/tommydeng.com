@@ -17,7 +17,15 @@ import ProjectIntro from "@/components/ProjectIntro.vue";
 export default {
   metaInfo: {
     title: "Ottabotics Learning Project",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "An introductory team project for uOttawa's robotics club. The project was to build a simple autonomous vehicle using limited hardware."
+      }
+    ]
   },
   components: {
     ProjectTitle,

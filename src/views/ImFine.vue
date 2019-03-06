@@ -10,7 +10,8 @@
 <script>
 export default {
   metaInfo: {
-    title: "I'm fine."
+    title: "I'm fine.",
+    meta: [{ vmid: "description", name: "description", content: "I'm fine." }]
   },
   created() {
     this.requestId = window.requestAnimationFrame(this.animate);

@@ -19,7 +19,10 @@ import ProjectShowcase from "@/components/ProjectShowcase.vue";
 export default {
   metaInfo: {
     title: "Photography",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      { vmid: "description", name: "description", content: "Pretty pixels?" }
+    ]
   },
   components: {
     ProjectTitle,

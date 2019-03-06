@@ -23,7 +23,15 @@ import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
   metaInfo: {
     title: "Gotta Go",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "A mock startup project for SEG2900 where my group was tasked with creating a website and pitch for a fictional company. We settled on the idea of Gotta Go. Gotta Go is a mobile application that uses mapping services and public reviews to allow users to locate the nearest and highest quality public restrooms around."
+      }
+    ]
   },
   components: {
     ProjectTitle,

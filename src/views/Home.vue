@@ -19,7 +19,15 @@ export default {
   name: "home",
   metaInfo: {
     title: "Home",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "Hi, I'm Tommy. Welcome to my website! I am a software engineering student who likes to make all sorts of things. Consider taking a look at some of my projects."
+      }
+    ]
   },
   components: {
     Banner,

@@ -23,7 +23,14 @@ import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
   metaInfo: {
     title: "Piano Tiles Bot",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: `Automated gameplay of "Piano Tiles" mobile game with PyAutoGUI.`
+      }
+    ]
   },
   components: {
     ProjectTitle,

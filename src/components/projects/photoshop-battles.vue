@@ -49,7 +49,15 @@ import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
   metaInfo: {
     title: "Photoshop Battles",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "Friendly Photoshop competitions at /r/photoshopbattles on Reddit."
+      }
+    ]
   },
   components: {
     ProjectTitle,

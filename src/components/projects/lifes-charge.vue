@@ -74,7 +74,15 @@ import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
   metaInfo: {
     title: "Life's Charge",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "A finite existence demonstrated through a visual countdown of a typical 4160-week life. Each dot represents a week, and each row is a year. The video is a perfect loop if repeated; the perpetual cycle is seen as the charge dwindles away to reveal a new life."
+      }
+    ]
   },
   components: {
     ProjectTitle,

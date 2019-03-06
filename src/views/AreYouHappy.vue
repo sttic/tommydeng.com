@@ -18,6 +18,7 @@
 export default {
   metaInfo: {
     title: "Are you happy?",
+    meta: [{ vmid: "description", name: "description", content: "Are you happy?" }]
   }
 };
 </script>

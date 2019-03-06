@@ -65,7 +65,14 @@ import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
   metaInfo: {
     title: "Sleep Visualization",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: "My terrible sleep habits visualized."
+      }
+    ]
   },
   components: {
     ProjectTitle,

@@ -32,7 +32,15 @@ import ProjectText from "@/components/ProjectText.vue";
 export default {
   metaInfo: {
     title: "Moon Photos",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "To the moon! I attempted to capture the highest quality moon photos possible with the entry-level camera setup I had."
+      }
+    ]
   },
   components: {
     ProjectTitle,

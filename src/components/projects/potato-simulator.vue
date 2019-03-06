@@ -111,7 +111,15 @@ import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
   metaInfo: {
     title: "Potato Simulator",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "A silly Unity 3D game that revolves around the player being a high-speed,<br>tumbling potato mindlessly rolling around to explore the world. Potato is not a typical game one might come along. There are no definite rules, there are not clear objectives, and there is no promise of an end. Potato is a game where the player, a high-speed tumbling potato, mindlessly rolls around exploring the world."
+      }
+    ]
   },
   components: {
     ProjectTitle,

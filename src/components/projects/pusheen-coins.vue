@@ -21,7 +21,14 @@ import ProjectShowcase from "@/components/ProjectShowcase.vue";
 export default {
   metaInfo: {
     title: "Pusheen Coins",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: "3D printed coins based on a cute Internet cat named Pusheen."
+      }
+    ]
   },
   components: {
     ProjectTitle,

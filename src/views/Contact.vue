@@ -19,7 +19,15 @@ export default {
   name: "contact",
   metaInfo: {
     title: "Contact",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "Contact Information. Feel free to share your thoughts and connect with me."
+      }
+    ]
   },
   components: {
     ContactIcons,

@@ -153,7 +153,14 @@ import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
   metaInfo: {
     title: "Habit Visualization",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content: `A python rework of "My terrible sleep habits visualized". Given a text file containing instances of a certain activity, my scripts generates several visualizations to represent it. It also creates csv-like files that can be imported into software, such as Excel, to further work with the data.`
+      }
+    ]
   },
   components: {
     ProjectTitle,

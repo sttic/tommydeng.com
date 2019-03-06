@@ -31,7 +31,15 @@ import ProjectLinks from "@/components/ProjectLinks.vue";
 export default {
   metaInfo: {
     title: "Interframe Compression",
-    titleTemplate: "Tommy Deng - %s"
+    titleTemplate: "Tommy Deng - %s",
+    meta: [
+      {
+        vmid: "description",
+        name: "description",
+        content:
+          "A system to send only the difference between the current and previous image in a video feed to reduce bandwidth usage in video streaming."
+      }
+    ]
   },
   components: {
     ProjectTitle,
