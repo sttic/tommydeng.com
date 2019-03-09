@@ -2,55 +2,40 @@
   <div id="projectList">
     <div class="row">
       <div id="left" class="6u 12u(narrower)">
-        <div
+        <ProjectCard
           v-for="(item, index) in projects.slice(0, 9)"
           :key="index"
           :id="item.id"
-          class="box special"
-        >
-          <span class="image featured showcase">
-            <router-link :to="`/projects/${item.id}`">
-              <img :src="item.img" alt>
-            </router-link>
-          </span>
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.description }}</p>
-          <ul class="actions">
-            <li>
-              <router-link :to="`/projects/${item.id}`" class="button alt">Read More</router-link>
-            </li>
-          </ul>
-        </div>
+          :link="`/projects/${item.id}`"
+          :img="item.img"
+          :title="item.title"
+          :description="item.description"
+        />
       </div>
 
       <div id="right" class="6u 12u(narrower)">
-        <div
+        <ProjectCard
           v-for="(item, index) in projects.slice(9)"
           :key="index"
           :id="item.id"
-          class="box special"
-        >
-          <span class="image featured showcase">
-            <router-link :to="`/projects/${item.id}`">
-              <img :src="item.img" alt>
-            </router-link>
-          </span>
-          <h3>{{ item.title }}</h3>
-          <p>{{ item.description }}</p>
-          <ul class="actions">
-            <li>
-              <router-link :to="`/projects/${item.id}`" class="button alt">Read More</router-link>
-            </li>
-          </ul>
-        </div>
+          :link="`/projects/${item.id}`"
+          :img="item.img"
+          :title="item.title"
+          :description="item.description"
+        />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import ProjectCard from "@/components/ProjectCard.vue";
+
 export default {
   name: "projectList",
+  components: {
+    ProjectCard
+  },
   data() {
     return {
       projects: [
