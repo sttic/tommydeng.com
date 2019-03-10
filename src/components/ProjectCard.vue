@@ -2,9 +2,9 @@
   <div class="box special">
     <span class="image featured showcase">
       <router-link :to="link">
-        <VueClazyLoad :src="img" :ratio="0.0001" :margin="`512px`">
+        <VueClazyLoad :src="img" :ratio="0.0001" :margin="`512px`" :style="`min-height: ${cardWidth * aspectRatio}px;`">
           <img :src="img">
-          <div class="preloader" slot="placeholder" :style="`padding-bottom: ${aspectRatio}%`"></div>
+          <div class="preloader" slot="placeholder" :style="`padding-bottom: ${aspectRatio * 100}%`"></div>
         </VueClazyLoad>
       </router-link>
     </span>
@@ -30,11 +30,12 @@ export default {
     img: String,
     imgSize: Object,
     title: String,
-    description: String
+    description: String,
+    cardWidth: Number
   },
   computed: {
     aspectRatio() {
-      return (this.imgSize.y / this.imgSize.x) * 100;
+      return (this.imgSize.y / this.imgSize.x);
     }
   }
 };

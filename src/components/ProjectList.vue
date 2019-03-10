@@ -11,6 +11,7 @@
           :imgSize="item.imgSize"
           :title="item.title"
           :description="item.description"
+          :cardWidth="cardWidth"
         />
       </div>
 
@@ -24,6 +25,7 @@
           :imgSize="item.imgSize"
           :title="item.title"
           :description="item.description"
+          :cardWidth="cardWidth"
         />
       </div>
     </div>
@@ -38,8 +40,25 @@ export default {
   components: {
     ProjectCard
   },
+  created() {
+    window.addEventListener("resize", this.handleResize);
+  },
+  mounted() {
+    this.firstCard = document.getElementById(this.projects[0].id);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.cardWidth = this.firstCard.getBoundingClientRect().width;
+    }
+  },
   data() {
     return {
+      firstCard: null,
+      cardWidth: 0,
       projects: [
         {
           id: `synthetic-data-generator`,
