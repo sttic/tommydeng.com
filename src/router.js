@@ -20,33 +20,33 @@ const router = new Router({
       component: loadView("Home")
     },
     {
-      path: "/projects/:id",
+      path: "/projects/:id/",
       name: "projects",
       component: loadView("Project"),
       props: true
     },
     {
-      path: "/contact",
+      path: "/contact/",
       name: "contact",
       component: loadView("Contact")
     },
     {
-      path: "/happy",
+      path: "/happy/",
       name: "happy",
       component: loadView("AreYouHappy")
     },
     {
-      path: "/cat",
+      path: "/cat/",
       name: "cat",
       component: loadView("Cat")
     },
     {
-      path: "/im-fine",
+      path: "/im-fine/",
       name: "im-fine",
       component: loadView("ImFine")
     },
     {
-      path: "/imfine",
+      path: "/imfine/",
       name: "imfine",
       component: loadView("ImFine")
     },

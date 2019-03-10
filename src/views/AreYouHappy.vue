@@ -7,7 +7,7 @@
           <router-link to="/">Yes</router-link>
         </li>
         <li>
-          <router-link to="/cat">No</router-link>
+          <router-link to="/cat/">No</router-link>
         </li>
       </ul>
     </div>

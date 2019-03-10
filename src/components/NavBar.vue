@@ -16,7 +16,7 @@
         </li>
         <li>
           <a v-if="isRoute('contact')" @click="this.smoothScrollTop">Contact</a>
-          <router-link v-else to="/contact">Contact</router-link>
+          <router-link v-else to="/contact/">Contact</router-link>
         </li>
       </ul>
     </nav>
