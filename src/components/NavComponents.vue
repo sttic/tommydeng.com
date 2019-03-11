@@ -1,8 +1,9 @@
 <template>
-  <div :class="showNavPanelClass">
+  <div :class="{ 'navPanel-visible': showNavPanelClass }">
     <NavButton @click.native="toggleNavPanel"/>
     <NavPanel/>
     <NavBar/>
+    <div id="navPanelOffClick" @click="navPanelOffClickEvent" :class="{ hide: !showNavPanelClass }"></div>
   </div>
 </template>
 
@@ -35,11 +36,14 @@ export default {
     },
     toggleNavPanel() {
       this.$store.dispatch("toggleShowNavPanel");
+    },
+    navPanelOffClickEvent() {
+      this.$store.dispatch("showNavPanelFalse");
     }
   },
   computed: {
     showNavPanelClass() {
-      return this.$store.getters.getShowNavPanel ? "navPanel-visible" : "";
+      return this.$store.getters.getShowNavPanel;
     }
   }
 };
@@ -65,5 +69,16 @@ export default {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
+}
+
+#navPanelOffClick {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+}
+
+.hide {
+  display: none;
 }
 </style>

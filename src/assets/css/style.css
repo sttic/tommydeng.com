@@ -3412,21 +3412,17 @@
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				height: 44px;
 				left: 0;
 				position: fixed;
 				top: 0;
-				width: 100%;
 				z-index: 10001;
 			}
 
 				#navButton .toggle {
 					text-decoration: none;
-					/* height: 100%; */
 					left: 0;
 					position: absolute;
 					top: 0;
-					/* width: 100%; */
 					border: 0;
 					outline: 0;
 				}
