@@ -13,7 +13,7 @@
     <div class="box">
       <h3>Thoughts</h3>
       <p>The averaging of frames had a massive impact on the final image quality, particularly the noise of it.</p>
-      <div style="text-align:center;">
+      <div class="center">
         <img src="https://i.imgur.com/EnJl1ie.png">
         <p>With frame averaging.</p>
         <img src="https://i.imgur.com/cmGR4Kx.png">
@@ -82,3 +82,14 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.center {
+  text-align: center;
+}
+
+.center img {
+  width: 100%;
+  max-width: 700px;
+}
+</style>
