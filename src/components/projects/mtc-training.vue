@@ -40,7 +40,7 @@ export default {
         caption: `Training done at the uOttawa's Brunsfield Centre.`
       },
       projectIntro: {
-        image: `https://engineering.uottawa.ca/sites/default/files/brunsfieldlandingpage_0.jpg`,
+        image: require("@/assets/images/projects/mtc-training/brunsfieldlandingpage_0.jpg"),
         title: `Completed`,
         general: `<ul><li>Basic training</li><li>Mill training</li></ul>`,
         tools: [
@@ -60,8 +60,8 @@ export default {
       projectShowcase: {
         title: `Showcase`,
         images: [
-          `https://i.imgur.com/pTPdA0f.jpg`,
-          `https://i.imgur.com/1EfcrjI.jpg`
+          require("@/assets/images/projects/mtc-training/pTPdA0f.jpg"),
+          require("@/assets/images/projects/mtc-training/1EfcrjI.jpg")
         ]
       }
     };

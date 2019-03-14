@@ -11,8 +11,8 @@
     <div class="box">
       <h3>Poster</h3>
       <span class="image fit">
-        <a href="https://i.imgur.com/DFC4s5M.jpg" target="_blank">
-          <img src="https://i.imgur.com/DFC4s5M.jpg">
+        <a :href="require('@/assets/images/projects/spells-and-steel/DFC4s5M.jpg')" target="_blank">
+          <img :src="require('@/assets/images/projects/spells-and-steel/DFC4s5M.jpg')">
         </a>
       </span>
     </div>
@@ -21,7 +21,7 @@
       <div style="text-align:center;">
         <h3>Montage</h3>
         <video preload="auto" autoplay="autoplay" loop="loop" width="100%">
-          <source src="https://i.imgur.com/DjYGhsW.mp4" type="video/mp4">
+          <source :src="require('@/assets/media/projects/spells-and-steel/DjYGhsW.mp4')" type="video/mp4">
         </video>
       </div>
     </div>
@@ -59,7 +59,7 @@ export default {
         caption: `A silly short film filled with magic and action.`
       },
       projectIntro: {
-        image: `https://i.imgur.com/bbgMk1Y.png`,
+        image: require("@/assets/images/projects/spells-and-steel/bbgMk1Y.png"),
         general: `Film project based off of Film Riot's "Portal Gun."`,
         tools: [
           { name: `Premiere Pro` },
@@ -80,21 +80,21 @@ export default {
       },
       projectShowcase: {
         images: [
-          `https://i.imgur.com/3POZbTu.png`,
-          `https://i.imgur.com/tOcSkDu.png`,
-          `https://i.imgur.com/efU5OdS.png`,
-          `https://i.imgur.com/5qf8OFC.png`,
-          `https://i.imgur.com/2r6xo11.png`,
-          `https://i.imgur.com/GNfAnzp.png`,
-          `https://i.imgur.com/s0zRUS1.png`,
-          `https://i.imgur.com/MvXLb5M.png`,
-          `https://i.imgur.com/duzklIP.png`,
-          `https://i.imgur.com/pl3RWLD.png`,
-          `https://i.imgur.com/aQzJxNp.png`,
-          `https://i.imgur.com/00ArAEX.png`,
-          `https://i.imgur.com/ex6aafR.png`,
-          `https://i.imgur.com/I6e5gUn.png`,
-          `https://i.imgur.com/bbgMk1Y.png`
+          require("@/assets/images/projects/spells-and-steel/3POZbTu.png"),
+          require("@/assets/images/projects/spells-and-steel/tOcSkDu.png"),
+          require("@/assets/images/projects/spells-and-steel/efU5OdS.png"),
+          require("@/assets/images/projects/spells-and-steel/5qf8OFC.png"),
+          require("@/assets/images/projects/spells-and-steel/2r6xo11.png"),
+          require("@/assets/images/projects/spells-and-steel/GNfAnzp.png"),
+          require("@/assets/images/projects/spells-and-steel/s0zRUS1.png"),
+          require("@/assets/images/projects/spells-and-steel/MvXLb5M.png"),
+          require("@/assets/images/projects/spells-and-steel/duzklIP.png"),
+          require("@/assets/images/projects/spells-and-steel/pl3RWLD.png"),
+          require("@/assets/images/projects/spells-and-steel/aQzJxNp.png"),
+          require("@/assets/images/projects/spells-and-steel/00ArAEX.png"),
+          require("@/assets/images/projects/spells-and-steel/ex6aafR.png"),
+          require("@/assets/images/projects/spells-and-steel/I6e5gUn.png"),
+          require("@/assets/images/projects/spells-and-steel/bbgMk1Y.png")
         ]
       }
     };

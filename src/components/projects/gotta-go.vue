@@ -47,7 +47,7 @@ export default {
         caption: `A mock startup project for SEG2900 where my group<br>was tasked with creating a website and pitch for a fictional company.<br><br>We settled on the idea of Gotta Go.`
       },
       projectIntro: {
-        image: `https://i.imgur.com/s7ZxgTP.jpg`,
+        image: require("@/assets/images/projects/gotta-go/s7ZxgTP.jpg"),
         general: `Gotta Go is a mobile application that uses mapping services and public reviews to allow users to locate the nearest and highest quality public restrooms around.`,
         tools: [
           { name: `Git` },
@@ -63,16 +63,16 @@ export default {
       projectShowcase: {
         title: `Presentation Slides`,
         images: [
-          `https://i.imgur.com/s7ZxgTP.jpg`,
-          `https://i.imgur.com/9peL1zW.jpg`,
-          `https://i.imgur.com/UIHb69z.jpg`,
-          `https://i.imgur.com/c7vktsk.jpg`,
-          `https://i.imgur.com/bkRHlZN.jpg`,
-          `https://i.imgur.com/deAVJtL.jpg`,
-          `https://i.imgur.com/EN9eKp0.jpg`,
-          `https://i.imgur.com/iR2Cue1.jpg`,
-          `https://i.imgur.com/kujKAno.jpg`,
-          `https://i.imgur.com/Tf5VoCi.jpg`
+          require("@/assets/images/projects/gotta-go/s7ZxgTP.jpg"),
+          require("@/assets/images/projects/gotta-go/9peL1zW.jpg"),
+          require("@/assets/images/projects/gotta-go/UIHb69z.jpg"),
+          require("@/assets/images/projects/gotta-go/c7vktsk.jpg"),
+          require("@/assets/images/projects/gotta-go/bkRHlZN.jpg"),
+          require("@/assets/images/projects/gotta-go/deAVJtL.jpg"),
+          require("@/assets/images/projects/gotta-go/EN9eKp0.jpg"),
+          require("@/assets/images/projects/gotta-go/iR2Cue1.jpg"),
+          require("@/assets/images/projects/gotta-go/kujKAno.jpg"),
+          require("@/assets/images/projects/gotta-go/Tf5VoCi.jpg")
         ]
       },
       projectLinks: {

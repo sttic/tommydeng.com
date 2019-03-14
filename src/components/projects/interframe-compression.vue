@@ -12,7 +12,10 @@
       <h3>Demo</h3>
       <div class="box alt">
         <video preload="auto" autoplay="autoplay" loop="loop" width="100%">
-          <source src="https://i.imgur.com/hLsjyED.mp4" type="video/mp4">
+          <source
+            :src="require('@/assets/media/projects/interframe-compression/hLsjyED.mp4')"
+            type="video/mp4"
+          >
         </video>
       </div>
     </div>
@@ -54,7 +57,7 @@ export default {
         caption: `A system to send only the difference between the current and previous image in a video feed to reduce bandwidth usage in video streaming.`
       },
       projectIntro: {
-        image: `https://i.imgur.com/LaqL9Nw.png`,
+        image: require("@/assets/images/projects/interframe-compression/LaqL9Nw.png"),
         general: `This interframe compression system is to send only the difference between the current and previous image in a video feed to reduce bandwidth usage in video streaming.`,
         tools: [
           { name: `Python` },

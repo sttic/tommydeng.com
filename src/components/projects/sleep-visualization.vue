@@ -13,40 +13,40 @@
       <div class="row">
         <div class="6u 12u(mobilep)">
           <span class="image fit">
-            <a href="https://i.imgur.com/MZm88oW.jpg" target="_blank">
-              <img src="https://i.imgur.com/MZm88oW.jpg" alt>
+            <a :href="require('@/assets/images/projects/sleep-visualization/MZm88oW.jpg')" target="_blank">
+              <img :src="require('@/assets/images/projects/sleep-visualization/MZm88oW.jpg')" alt>
             </a>
           </span>
           <span class="image fit">
-            <a href="https://i.imgur.com/B43lBiu.png" target="_blank">
-              <img src="https://i.imgur.com/B43lBiu.png" alt>
+            <a :href="require('@/assets/images/projects/sleep-visualization/B43lBiu.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/sleep-visualization/B43lBiu.png')" alt>
             </a>
           </span>
           <span class="image fit">
-            <a href="https://i.imgur.com/qnC5HLp.png" target="_blank">
-              <img src="https://i.imgur.com/qnC5HLp.png" alt>
+            <a :href="require('@/assets/images/projects/sleep-visualization/qnC5HLp.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/sleep-visualization/qnC5HLp.png')" alt>
             </a>
           </span>
           <span class="image fit">
-            <a href="https://i.imgur.com/rpkWALS.png" target="_blank">
-              <img src="https://i.imgur.com/rpkWALS.png" alt>
+            <a :href="require('@/assets/images/projects/sleep-visualization/rpkWALS.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/sleep-visualization/rpkWALS.png')" alt>
             </a>
           </span>
         </div>
         <div class="6u 12u(mobilep)">
           <span class="image fit">
-            <a href="https://i.imgur.com/izUzoxH.png" target="_blank">
-              <img src="https://i.imgur.com/izUzoxH.png" alt>
+            <a :href="require('@/assets/images/projects/sleep-visualization/izUzoxH.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/sleep-visualization/izUzoxH.png')" alt>
             </a>
           </span>
           <span class="image fit">
-            <a href="https://i.imgur.com/MABlxM8.png" target="_blank">
-              <img src="https://i.imgur.com/MABlxM8.png" alt>
+            <a :href="require('@/assets/images/projects/sleep-visualization/MABlxM8.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/sleep-visualization/MABlxM8.png')" alt>
             </a>
           </span>
           <span class="image fit">
-            <a href="https://i.imgur.com/XwX627U.png" target="_blank">
-              <img src="https://i.imgur.com/XwX627U.png" alt>
+            <a :href="require('@/assets/images/projects/sleep-visualization/XwX627U.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/sleep-visualization/XwX627U.png')" alt>
             </a>
           </span>
         </div>
@@ -86,7 +86,7 @@ export default {
         caption: `My terrible sleep habits visualized.`
       },
       projectIntro: {
-        image: `https://i.imgur.com/MZm88oW.jpg`,
+        image: require("@/assets/images/projects/sleep-visualization/MZm88oW.jpg"),
         tools: [
           { name: `C++` },
           {

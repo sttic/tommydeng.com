@@ -57,34 +57,34 @@ export default {
         caption: `Digital art that I made for others.`
       },
       projectIntro: {
-        image: `https://i.imgur.com/sZGC81P.jpg`,
+        image: require("@/assets/images/projects/minecraft-art/sZGC81P.jpg"),
         tools: [{ name: `Cinema 4D` }, { name: `Photoshop` }],
         skills: [`3D graphics`, `Photomanipulation`]
       },
       projectImageArray: {
         avatars: [
-          `https://i.imgur.com/HWp5gTR.jpg`,
-          `https://i.imgur.com/VVflmG8.jpg`,
-          `https://i.imgur.com/I7k2Cd4.jpg`,
-          `https://i.imgur.com/xWiZzU9.jpg`,
-          `https://i.imgur.com/S8hvr71.jpg`,
-          `https://i.imgur.com/HFFn8Ne.jpg`
+          require("@/assets/images/projects/minecraft-art/HWp5gTR.jpg"),
+          require("@/assets/images/projects/minecraft-art/VVflmG8.jpg"),
+          require("@/assets/images/projects/minecraft-art/I7k2Cd4.jpg"),
+          require("@/assets/images/projects/minecraft-art/xWiZzU9.jpg"),
+          require("@/assets/images/projects/minecraft-art/S8hvr71.jpg"),
+          require("@/assets/images/projects/minecraft-art/HFFn8Ne.jpg")
         ],
         celebratory: [
-          `https://i.imgur.com/sZGC81P.jpg`,
-          `https://i.imgur.com/N6P1RDE.gif`,
-          `https://i.imgur.com/CqSL2MG.png`
+          require("@/assets/images/projects/minecraft-art/sZGC81P.jpg"),
+          require("@/assets/images/projects/minecraft-art/N6P1RDE.gif"),
+          require("@/assets/images/projects/minecraft-art/CqSL2MG.png")
         ],
         thumbnails: [
-          `https://i.imgur.com/MBXpt2V.png`,
-          `https://i.imgur.com/qsmRXvC.png`,
-          `https://i.imgur.com/VnNjZPC.png`,
-          `https://i.imgur.com/DRf7AL8.png`,
-          `https://i.imgur.com/PpxWd11.png`,
-          `https://i.imgur.com/yZm8nfM.png`,
-          `https://i.imgur.com/viKZJcw.png`,
-          `https://i.imgur.com/flooX9O.png`,
-          `https://i.imgur.com/UEsGXPN.png`
+          require("@/assets/images/projects/minecraft-art/MBXpt2V.png"),
+          require("@/assets/images/projects/minecraft-art/qsmRXvC.png"),
+          require("@/assets/images/projects/minecraft-art/VnNjZPC.png"),
+          require("@/assets/images/projects/minecraft-art/DRf7AL8.png"),
+          require("@/assets/images/projects/minecraft-art/PpxWd11.png"),
+          require("@/assets/images/projects/minecraft-art/yZm8nfM.png"),
+          require("@/assets/images/projects/minecraft-art/viKZJcw.png"),
+          require("@/assets/images/projects/minecraft-art/flooX9O.png"),
+          require("@/assets/images/projects/minecraft-art/UEsGXPN.png")
         ]
       }
     };

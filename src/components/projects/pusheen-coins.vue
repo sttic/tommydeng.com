@@ -43,7 +43,7 @@ export default {
         caption: `Coins based on a cute Internet cat named Pusheen.`
       },
       projectIntro: {
-        image: `https://i.imgur.com/uBfj15Q.png`,
+        image: require("@/assets/images/projects/pusheen-coins/uBfj15Q.png"),
         tools: [
           { name: `Cinema 4D` },
           { name: `Cura` },
@@ -58,13 +58,13 @@ export default {
       projectShowcase: {
         title: `Showcase`,
         images: [
-          `https://i.imgur.com/uBfj15Q.png`,
-          `https://i.imgur.com/uMDzScm.png`,
-          `https://i.imgur.com/h7dNM7x.gif`,
-          `https://i.imgur.com/YvEV7GO.png`,
-          `https://i.imgur.com/il8XfPL.png`,
-          `https://i.imgur.com/BD4Mj6D.png`,
-          `https://i.imgur.com/RwAqPjp.png`
+          require("@/assets/images/projects/pusheen-coins/uBfj15Q.png"),
+          require("@/assets/images/projects/pusheen-coins/uMDzScm.png"),
+          require("@/assets/images/projects/pusheen-coins/h7dNM7x.gif"),
+          require("@/assets/images/projects/pusheen-coins/YvEV7GO.png"),
+          require("@/assets/images/projects/pusheen-coins/il8XfPL.png"),
+          require("@/assets/images/projects/pusheen-coins/BD4Mj6D.png"),
+          require("@/assets/images/projects/pusheen-coins/RwAqPjp.png")
         ]
       }
     };

@@ -14,15 +14,21 @@
         <div class="row no-collapse 50% uniform">
           <div class="4u">
             <span class="image fit">
-              <a href="https://i.imgur.com/BdR0gXC.jpg" target="_blank">
-                <img src="https://i.imgur.com/BdR0gXC.jpg" alt>
+              <a
+                :href="require('@/assets/images/projects/traffic-light-detector/BdR0gXC.jpg')"
+                target="_blank"
+              >
+                <img :src="require('@/assets/images/projects/traffic-light-detector/BdR0gXC.jpg')" alt>
               </a>
             </span>
           </div>
           <div class="4u">
             <span class="image fit">
-              <a href="https://i.imgur.com/3jgnP5t.jpg" target="_blank">
-                <img src="https://i.imgur.com/3jgnP5t.jpg" alt>
+              <a
+                :href="require('@/assets/images/projects/traffic-light-detector/3jgnP5t.jpg')"
+                target="_blank"
+              >
+                <img :src="require('@/assets/images/projects/traffic-light-detector/3jgnP5t.jpg')" alt>
               </a>
             </span>
           </div>
@@ -63,7 +69,7 @@ export default {
         caption: `A computer vision system to detect traffic light states.`
       },
       projectIntro: {
-        image: `https://i.imgur.com/PSrbi1J.jpg`,
+        image: require("@/assets/images/projects/traffic-light-detector/PSrbi1J.jpg"),
         general: `A computer vision system to detect traffic light states in real-time.`,
         tools: [
           { name: `Python` },

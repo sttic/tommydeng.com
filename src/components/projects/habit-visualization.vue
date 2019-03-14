@@ -24,8 +24,8 @@
         </div>
         <div class="6u 12u(mobilep)">
           <span class="image fit">
-            <a href="https://i.imgur.com/BKWWOwt.png" target="_blank">
-              <img src="https://i.imgur.com/BKWWOwt.png" alt>
+            <a :href="require('@/assets/images/projects/habit-visualization/BKWWOwt.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/habit-visualization/BKWWOwt.png')">
             </a>
           </span>
         </div>
@@ -35,8 +35,8 @@
       <div class="row">
         <div class="6u 12u(mobilep)">
           <span class="image fit">
-            <a href="https://i.imgur.com/o0l0hch.png" target="_blank">
-              <img src="https://i.imgur.com/o0l0hch.png" alt>
+            <a :href="require('@/assets/images/projects/habit-visualization/o0l0hch.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/habit-visualization/o0l0hch.png')">
             </a>
           </span>
         </div>
@@ -59,8 +59,8 @@
         </div>
         <div class="6u 12u(mobilep)">
           <span class="image fit">
-            <a href="https://i.imgur.com/68bw1Zd.png" target="_blank">
-              <img src="https://i.imgur.com/68bw1Zd.png" alt>
+            <a :href="require('@/assets/images/projects/habit-visualization/68bw1Zd.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/habit-visualization/68bw1Zd.png')">
             </a>
           </span>
         </div>
@@ -70,8 +70,8 @@
       <div class="row">
         <div class="6u 12u(mobilep)">
           <span class="image fit">
-            <a href="https://i.imgur.com/y8VD2nV.png" target="_blank">
-              <img src="https://i.imgur.com/y8VD2nV.png" alt>
+            <a :href="require('@/assets/images/projects/habit-visualization/y8VD2nV.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/habit-visualization/y8VD2nV.png')">
             </a>
           </span>
         </div>
@@ -80,7 +80,7 @@
             This is what I call a 'spectrum', given its vague resemblance to emission spectra for certain activities
             (I find the
             <a
-              href="https://i.imgur.com/qOu54cB.png"
+              :href="require('@/assets/images/projects/habit-visualization/qOu54cB.png')"
               target="_blank"
             >sleep one</a> to be best for this).
             It shows the same data as the previous heatmap but formatted so that it spans the entire week in a single line.
@@ -106,8 +106,8 @@
         </div>
         <div class="6u 12u(mobilep)">
           <span class="image fit">
-            <a href="https://i.imgur.com/2Wfw6BJ.png" target="_blank">
-              <img src="https://i.imgur.com/2Wfw6BJ.png" alt>
+            <a :href="require('@/assets/images/projects/habit-visualization/2Wfw6BJ.png')" target="_blank">
+              <img :src="require('@/assets/images/projects/habit-visualization/2Wfw6BJ.png')">
             </a>
           </span>
         </div>
@@ -115,8 +115,8 @@
 
       <br>
       <span class="image fit">
-        <a href="https://i.imgur.com/hCd8hij.png" target="_blank">
-          <img src="https://i.imgur.com/hCd8hij.png" alt height="42">
+        <a :href="require('@/assets/images/projects/habit-visualization/hCd8hij.png')" target="_blank">
+          <img :src="require('@/assets/images/projects/habit-visualization/hCd8hij.png')" alt height="42">
         </a>
       </span>
       <p>Heatmap reference/key. From left to right, it represents 0% to 100% respectively.</p>
@@ -175,7 +175,7 @@ export default {
         caption: `A python rework of "My terrible sleep habits visualized".`
       },
       projectIntro: {
-        image: `https://i.imgur.com/uZ28MYV.png`,
+        image: require("@/assets/images/projects/habit-visualization/uZ28MYV.png"),
         imageStyle: `image fit`,
         general: `Given a text file containing instances of a certain activity, my scripts generates several visualizations to represent it. It also creates csv-like files that can be imported into software, such as Excel, to further work with the data.`,
         tools: [
@@ -186,31 +186,31 @@ export default {
       },
       projectImageArray: {
         oncampus: [
-          `https://i.imgur.com/BKWWOwt.png`,
-          `https://i.imgur.com/o0l0hch.png`,
-          `https://i.imgur.com/68bw1Zd.png`,
-          `https://i.imgur.com/y8VD2nV.png`
+          require("@/assets/images/projects/habit-visualization/BKWWOwt.png"),
+          require("@/assets/images/projects/habit-visualization/o0l0hch.png"),
+          require("@/assets/images/projects/habit-visualization/68bw1Zd.png"),
+          require("@/assets/images/projects/habit-visualization/y8VD2nV.png")
         ],
         transit: [
-          `https://i.imgur.com/rx3LbJa.png`,
-          `https://i.imgur.com/UalDmoE.png`,
-          `https://i.imgur.com/xlM5wh6.png`,
-          `https://i.imgur.com/cq8CxW5.png`
+          require("@/assets/images/projects/habit-visualization/rx3LbJa.png"),
+          require("@/assets/images/projects/habit-visualization/UalDmoE.png"),
+          require("@/assets/images/projects/habit-visualization/xlM5wh6.png"),
+          require("@/assets/images/projects/habit-visualization/cq8CxW5.png")
         ],
         sleep: [
-          `https://i.imgur.com/EQbZdKv.png`,
-          `https://i.imgur.com/CgDlPtU.png`,
-          `https://i.imgur.com/qZ6IzBt.png`,
-          `https://i.imgur.com/qOu54cB.png`
+          require("@/assets/images/projects/habit-visualization/EQbZdKv.png"),
+          require("@/assets/images/projects/habit-visualization/CgDlPtU.png"),
+          require("@/assets/images/projects/habit-visualization/qZ6IzBt.png"),
+          require("@/assets/images/projects/habit-visualization/qOu54cB.png")
         ],
         wip: [
-          `https://i.imgur.com/L8VO21P.png`,
-          `https://i.imgur.com/0AOOBjH.png`
+          require("@/assets/images/projects/habit-visualization/L8VO21P.png"),
+          require("@/assets/images/projects/habit-visualization/0AOOBjH.png")
         ],
         derps: [
-          `https://i.imgur.com/uXO2PXG.png`,
-          `https://i.imgur.com/gFsWx8U.png`,
-          `https://i.imgur.com/aPLf8dh.png`
+          require("@/assets/images/projects/habit-visualization/uXO2PXG.png"),
+          require("@/assets/images/projects/habit-visualization/gFsWx8U.png"),
+          require("@/assets/images/projects/habit-visualization/aPLf8dh.png")
         ]
       },
       projectLinks: {

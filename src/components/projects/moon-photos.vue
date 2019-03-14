@@ -14,9 +14,9 @@
       <h3>Thoughts</h3>
       <p>The averaging of frames had a massive impact on the final image quality, particularly the noise of it.</p>
       <div class="center">
-        <img src="https://i.imgur.com/EnJl1ie.png">
+        <img :src="require('@/assets/images/projects/moon-photos/EnJl1ie.png')">
         <p>With frame averaging.</p>
-        <img src="https://i.imgur.com/cmGR4Kx.png">
+        <img :src="require('@/assets/images/projects/moon-photos/cmGR4Kx.png')">
         <p>Without frame averaging.</p>
       </div>
     </div>
@@ -56,9 +56,9 @@ export default {
       },
       projectImageArray: {
         moons: [
-          `https://i.imgur.com/cuW7U9u.png`,
-          `https://i.imgur.com/1MV0JY8.png`,
-          `https://i.imgur.com/EnJl1ie.png`
+          require("@/assets/images/projects/moon-photos/cuW7U9u.png"),
+          require("@/assets/images/projects/moon-photos/1MV0JY8.png"),
+          require("@/assets/images/projects/moon-photos/EnJl1ie.png")
         ]
       },
       projectIntro: {

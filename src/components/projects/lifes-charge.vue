@@ -4,12 +4,12 @@
 
     <div class="box special" style="background:#000;">
       <video preload="auto" autoplay="autoplay" loop="loop" width="60%">
-        <source src="https://imgur.com/S1L4tOT.mp4" type="video/mp4">
+        <source :src="require('@/assets/media/projects/lifes-charge/S1L4tOT.mp4')" type="video/mp4">
       </video>
       <div style="padding: 4% 0 2% 0;">
-        <img src="https://i.imgur.com/2b4INHV.png" style="width:30%;" alt>
-        <img src="https://i.imgur.com/AqIllUs.png" style="width:30%;" alt>
-        <img src="https://i.imgur.com/fhUyCqk.png" style="width:30%;" alt>
+        <img :src="require('@/assets/images/projects/lifes-charge/2b4INHV.png')" style="width:30%;" alt>
+        <img :src="require('@/assets/images/projects/lifes-charge/AqIllUs.png')" style="width:30%;" alt>
+        <img :src="require('@/assets/images/projects/lifes-charge/fhUyCqk.png')" style="width:30%;" alt>
       </div>
       <p>The charges for ages 20, 40, and 60 years old respectively.</p>
     </div>
@@ -116,7 +116,7 @@ export default {
         links: [
           {
             name: `Direct link`,
-            ref: `https://imgur.com/S1L4tOT.gifv`
+            ref: require("@/assets/media/projects/lifes-charge/S1L4tOT.mp4")
           },
           {
             name: `Reddit post`,

@@ -36,16 +36,16 @@ export default {
         caption: `Pretty pixels?`
       },
       projectIntro: {
-        image: `https://i.imgur.com/qr7ywEy.jpg`,
+        image: require("@/assets/images/projects/photography/qr7ywEy.jpg"),
         tools: [{ name: `Photoshop` }, { name: `Canon T5i/700D` }],
         skills: [`Photomanipulation`, `Cinematography`]
       },
       projectShowcase: {
         title: `Showcase`,
         images: [
-          `https://i.imgur.com/qr7ywEy.jpg`,
-          `https://i.imgur.com/JOx1cfb.jpg`,
-          `https://i.imgur.com/FvQSCTQ.jpg`
+          require("@/assets/images/projects/photography/qr7ywEy.jpg"),
+          require("@/assets/images/projects/photography/JOx1cfb.jpg"),
+          require("@/assets/images/projects/photography/FvQSCTQ.jpg")
         ]
       }
     };

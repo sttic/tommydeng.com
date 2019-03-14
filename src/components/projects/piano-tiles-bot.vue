@@ -46,7 +46,7 @@ export default {
         caption: `Automated gameplay of "Piano Tiles" mobile game with PyAutoGUI.`
       },
       projectIntro: {
-        image: `https://i.imgur.com/LRvj1Rk.png`,
+        image: require("@/assets/images/projects/piano-tiles-bot/LRvj1Rk.png"),
         general: `Piano Tiles is a mobile rhythm game where the goal is to only tap only the black (piano) tiles as they move across the screen at a steadily increasing pace. This project automates this and plays in place of the user with super-human performance.`,
         tools: [
           { name: `Python` },
@@ -60,7 +60,7 @@ export default {
       },
       projectShowcase: {
         title: `Image`,
-        images: [`https://i.imgur.com/DzAxJVQ.png`]
+        images: [require("@/assets/images/projects/piano-tiles-bot/DzAxJVQ.png")]
       },
       projectText: {
         title: `Method`,

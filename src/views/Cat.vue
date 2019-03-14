@@ -1,6 +1,6 @@
 <template>
   <div id="cat">
-    <img src="https://i.imgur.com/7umbgSd.jpg">
+    <img :src="require('@/assets/images/cat/7umbgSd.jpg')">
   </div>
 </template>
 

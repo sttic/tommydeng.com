@@ -38,7 +38,7 @@ export default {
         caption: `An introductory team project for uOttawa's robotics club.`
       },
       projectIntro: {
-        image: `https://i.imgur.com/5TTl1fA.jpg`,
+        image: require("@/assets/images/projects/ottabotics-learn/5TTl1fA.jpg"),
         general: `The project was to build a simple autonomous vehicle, using limited hardware, that is capable of:
           <br><br>
           <ol>
