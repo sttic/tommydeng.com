@@ -209,7 +209,7 @@ export default {
 
 .title {
   width: 100%;
-  margin-top: -3em;
+  margin-top: -2em;
   position: absolute;
   top: 50%;
   text-align: center;

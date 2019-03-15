@@ -46,11 +46,6 @@ const router = new Router({
       component: loadView("ImFine")
     },
     {
-      path: "/imfine/",
-      name: "imfine",
-      component: loadView("ImFine")
-    },
-    {
       path: "*",
       redirect: "/"
     }
