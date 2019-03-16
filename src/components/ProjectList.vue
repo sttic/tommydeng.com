@@ -124,6 +124,13 @@ export default {
           description: `Coins based on a cute Internet cat named Pusheen.`
         },
         {
+          id: `inventure`,
+          img: `https://i.imgur.com/I0zsAfK.png`,
+          imgSize: { x: 1980, y: 1980 },
+          title: `Inventure Website`,
+          description: `Inventure is a platform that brings together youth and business opportunities.`
+        },
+        {
           id: `piano-tiles-bot`,
           img: `https://i.imgur.com/LRvj1Rk.png`,
           imgSize: { x: 1080, y: 904 },
