@@ -22,6 +22,10 @@ export default {
     NavComponents,
     Footer
   },
+  created() {
+    // eslint-disable-next-line
+    NProgress.configure({ showSpinner: false });
+  },
   computed: {
     onMainRoute() {
       return "home;projects;contact".split(";").includes(this.$route.name);
@@ -32,6 +36,10 @@ export default {
 
 <style>
 @import "./assets/css/style.css";
+
+#nprogress .bar {
+  /* background: #41b883; */
+}
 
 a {
   cursor: pointer;

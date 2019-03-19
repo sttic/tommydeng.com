@@ -61,4 +61,17 @@ const router = new Router({
   }
 });
 
+router.beforeResolve((to, from, next) => {
+  if (to.path) {
+    // eslint-disable-next-line
+    NProgress.start();
+  }
+  next();
+});
+
+router.afterEach(() => {
+  // eslint-disable-next-line
+  NProgress.done();
+});
+
 export default router;
